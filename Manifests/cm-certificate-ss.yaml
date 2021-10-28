@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: traefik.admin.dev.ubivius.tk
+spec:
+  dnsNames:
+    - traefik.admin.dev.ubivius.tk
+  secretName: traefik.admin.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
