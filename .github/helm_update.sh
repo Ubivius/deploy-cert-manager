@@ -17,7 +17,9 @@ case $1 in
         kubectl apply -f chart/configmap.yaml
     ;;
     cert-manager)
-        helm upgrade cert-manager --install --version 1.6.0 jetstack/cert-manager -f chart/values.yaml
+        helm upgrade cert-manager --install --version 1.6.0 jetstack/cert-manager --namespace cert-manager --create-namespace --set installCRDs=true
+        kubectl apply -f cluster-issuer-ss.yaml
+        kubectl apply -f cm-certificate-ss.yaml
     ;;
     traefik)
         helm upgrade traefik --install --version 10.3.4 traefik/traefik -f chart/values.yaml
