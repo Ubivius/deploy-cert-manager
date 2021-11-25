@@ -1,0 +1,181 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: authentication.anon.dev.ubivius.tk
+spec:
+  dnsNames:
+    - authentication.anon.dev.ubivius.tk
+  secretName: authentication.anon.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: achievements.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - achievements.player.dev.ubivius.tk
+  secretName: achievements.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: character-data.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - character-data.player.dev.ubivius.tk
+  secretName: character-data.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dispatcher.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - dispatcher.player.dev.ubivius.tk
+  secretName: dispatcher.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: friendslist.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - friendslist.player.dev.ubivius.tk
+  secretName: friendslist.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: matchmaking.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - matchmaking.player.dev.ubivius.tk
+  secretName: matchmaking.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: template.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - template.player.dev.ubivius.tk
+  secretName: template.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: text-chat.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - text-chat.player.dev.ubivius.tk
+  secretName: text-chat.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: user.player.dev.ubivius.tk
+spec:
+  dnsNames:
+    - user.player.dev.ubivius.tk
+  secretName: user.player.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: grafana.admin.dev.ubivius.tk
+spec:
+  dnsNames:
+    - grafana.admin.dev.ubivius.tk
+  secretName: grafana.admin.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: keycloak.admin.dev.ubivius.tk
+spec:
+  dnsNames:
+    - keycloak.admin.dev.ubivius.tk
+  secretName: keycloak.admin.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: mongodb.admin.dev.ubivius.tk
+spec:
+  dnsNames:
+    - mongodb.admin.dev.ubivius.tk
+  secretName: mongodb.admin.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: traefik.admin.dev.ubivius.tk
+spec:
+  dnsNames:
+    - traefik.admin.dev.ubivius.tk
+  secretName: traefik.admin.dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dev.ubivius.tk
+spec:
+  dnsNames:
+    - dev.ubivius.tk
+  secretName: dev.ubivius.tk
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
